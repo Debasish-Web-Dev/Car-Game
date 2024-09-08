@@ -1,0 +1,94 @@
+body {
+    overflow: hidden;
+    margin: auto;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sky {
+    height: 100vh;
+    width: 3500px;
+    background-image: url(https://img.freepik.com/free-vector/blank-meadow-landscape-scene-sunset-time_1308-62586.jpg?w=2000);
+    background-repeat: no-repeat;
+    position: absolute;
+    /* animation: sky 12s linear infinite; */
+}
+
+
+/* @keyframes sky{
+    to{
+        transform:translateX(-2000px);
+    }
+} */
+
+.treak {
+    height: 50vh;
+    width: 600vw;
+    background-image: url(https://opengameart.org/sites/default/files/Toon%20Road%20Texture.png);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    position: absolute;
+    top: 70vh;
+    animation: road linear 6s infinite;
+}
+
+.car {
+    height: 100px;
+    width: 300px;
+    background-image: url(https://i.postimg.cc/2SVfHC8d/car.png);
+    background-size: cover;
+    left: 400px;
+    /* top: -50px; */
+    position: absolute;
+    bottom: 0;
+    top: 560px;
+    animation: car linear 1s infinite;
+}
+
+.wheel-1 img {
+    width: 70px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    animation: wheelRotation linear 1s infinite;
+}
+
+.wheel-2 img {
+    width: 70px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    animation: wheelRotation linear 1s infinite;
+}
+
+@keyframes wheelRotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@keyframes car {
+    0% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes road {
+    100% {
+        transform: translateX(-500vw);
+    }
+}
